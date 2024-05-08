@@ -1,0 +1,18 @@
+SEQUELIZE 
+- MAKE MIGRATION : npx sequelize-cli migration:generate --name create_table_users
+- MAKE MODEL & migration : sequelize model:generate --name User   --attributes username:string,email:string,avatar:string,password:string 
+
+
+
+ sequelize model:generate --name Client   --attributes
+> name:string,
+> email:string,
+> username:string,
+> phoneNumber:string,
+> emailVerifiedAt:timestamp,
+> phoneVerifiedAt:timestamp,
+> password:string,
+> avatar:string,
+> roleId
+
+sequelize model:generate --name Store  --attributes authorId:uuid,name:string,avatar:string,address:string,description:string
